@@ -1,12 +1,55 @@
 {
-  "pages":[
-    "pages/index/index"
+  "pages": [
+    "pages/index/index",
+    "pages/search/index",
+    "pages/topic/index",
+    "pages/category/index",
+    "pages/cart/index",
+    "pages/user/index"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "线上商城",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#fafafa",
+    "borderStyle": "white",
+    "selectedColor": "#b4282d",
+    "color": "#666",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icons/tabBar/home1.png",
+        "selectedIconPath": "icons/tabBar/home2.png"
+      },
+      {
+        "pagePath": "pages/topic/index",
+        "text": "专题",
+        "iconPath": "icons/tabBar/topic1.png",
+        "selectedIconPath": "icons/tabBar/topic2.png"
+      },
+      {
+        "pagePath": "pages/category/index",
+        "text": "分类",
+        "iconPath": "icons/tabBar/sort1.png",
+        "selectedIconPath": "icons/tabBar/sort2.png"
+      },
+      {
+        "pagePath": "pages/cart/index",
+        "text": "购物车",
+        "iconPath": "icons/tabBar/cart1.png",
+        "selectedIconPath": "icons/tabBar/cart2.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我的",
+        "iconPath": "icons/tabBar/my1.png",
+        "selectedIconPath": "icons/tabBar/my2.png"
+      }
+   ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

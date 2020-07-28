@@ -1,1 +1,257 @@
 /**index.wxss**/
+.index_swiper swiper {
+  width: 750rpx;
+  height: 400rpx;
+}
+.index_swiper swiper image {
+  width: 100%;
+}
+.index_cate {
+  display: flex;
+  border-bottom: 15rpx solid #ededed;
+}
+.index_cate navigator {
+  padding: 20rpx;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.index_cate navigator image {
+  flex: 2;
+  width: 60rpx;
+  height: 60rpx;
+}
+.index_cate navigator text {
+  flex: 1;
+  font-size: 28rpx;
+  padding-top: 5rpx;
+}
+.index_brand {
+  width: 100%;
+}
+.index_brand .brand_title {
+  padding: 40rpx 0;
+  font-size: 28rpx;
+  text-align: center;
+}
+.index_brand .brand_content {
+  width: 730rpx;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.index_brand .brand_content navigator {
+  width: 360rpx;
+  height: 235rpx;
+  margin-bottom: 10rpx;
+  position: relative;
+}
+.index_brand .brand_content navigator .brand_warp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10rpx;
+}
+.index_brand .brand_content navigator .brand_warp .brand_price {
+  font-size: 24rpx;
+}
+.index_brand .brand_content navigator image {
+  width: 100%;
+  height: 100%;
+}
+.newgoods .newgoods_top {
+  margin-top: 10rpx;
+  height: 260rpx;
+  width: 100%;
+  background: url('https://i.loli.net/2020/07/28/sUmY78VQ3z5eXkv.png') no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newgoods .newgoods_top .top view {
+  color: #8c9bae;
+  font-size: 32rpx;
+}
+.newgoods .newgoods_top .top view:nth-child(2) {
+  width: 180rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin: 27rpx auto 0 auto;
+  font-size: 22rpx;
+  background: #d8e4f0;
+}
+.newgoods .newgoods_list {
+  margin-top: 20rpx;
+  background: #fff;
+  padding-bottom: 10rpx;
+}
+.newgoods .newgoods_list .scroll-view {
+  width: 100%;
+  white-space: nowrap;
+}
+.newgoods .newgoods_list .scroll-view navigator {
+  width: 280rpx;
+  height: 416rpx;
+  margin: 5rpx 0 5rpx 25rpx;
+  display: inline-block;
+}
+.newgoods .newgoods_list .scroll-view navigator image {
+  width: 280rpx;
+  height: 280rpx;
+}
+.newgoods .newgoods_list .scroll-view navigator view:nth-child(2) {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.newgoods .newgoods_list .scroll-view navigator view:nth-child(3) {
+  color: #8a8a8a;
+  font-size: 24rpx;
+}
+.newgoods .newgoods_list .scroll-view navigator view:nth-child(4) {
+  color: #9c3232;
+  font-size: 24rpx;
+}
+.newgoods .newgoods_list .scroll-view navigator view {
+  width: 94%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 8rpx;
+  text-indent: 1em;
+}
+.newgoods .newgoods_list navigator:nth-child(n+2) {
+  border-left: 1rpx solid #f4f4f4;
+}
+.hotgoods .newgoods_top {
+  background: url('https://i.loli.net/2020/07/28/abXxGKMezruowdf.png') no-repeat;
+  background-size: 100% 100%;
+}
+.hotgoods .newgoods_top .top view {
+  color: #b1a279;
+  font-size: 32rpx;
+  vertical-align: middle;
+}
+.hotgoods .newgoods_top .top view:nth-child(2) {
+  background: #f4e9cb;
+}
+.topic {
+  margin-top: 20rpx;
+  background: #fff;
+}
+.topic .topic_top {
+  text-align: center;
+  padding: 36rpx;
+  vertical-align: middle;
+}
+.topic .topic_list .scroll-view {
+  white-space: nowrap;
+}
+.topic .topic_list .scroll-view navigator {
+  display: inline-block;
+  width: 575rpx;
+  margin-left: 25rpx;
+}
+.topic .topic_list .scroll-view navigator image {
+  display: block;
+  width: 575rpx;
+  height: 325rpx;
+  border-radius: 10rpx;
+}
+.topic .topic_list .scroll-view navigator .btom {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 42rpx;
+  width: 100%;
+}
+.topic .topic_list .scroll-view navigator .btom .btom_left {
+  width: 90%;
+}
+.topic .topic_list .scroll-view navigator .btom .btom_left view {
+  margin-top: 8rpx;
+}
+.topic .topic_list .scroll-view navigator .btom .btom_left view:nth-child(1) {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.topic .topic_list .scroll-view navigator .btom .btom_left view:nth-child(2) {
+  width: 90%;
+  color: #8a8a8a;
+  font-size: 24rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.topic .topic_list .scroll-view navigator .btom .btom_right {
+  margin-top: 8rpx;
+  color: #9c3232;
+  font-size: 24rpx;
+}
+.topic .topic_list .scroll-view navigator:last-child {
+  margin-right: 25rpx;
+}
+.newcatgory {
+  margin-top: 20rpx;
+  padding: 0 10rpx 25rpx 10rpx;
+}
+.newcatgory .newcatgory_list .head {
+  padding: 25rpx 0;
+  text-align: center;
+}
+.newcatgory .newcatgory_list .list_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 730rpx;
+  margin: 0 auto;
+}
+.newcatgory .newcatgory_list .list_wrap navigator {
+  width: 360rpx;
+  background: #fff;
+  margin-bottom: 10rpx;
+  padding-bottom: 10rpx;
+}
+.newcatgory .newcatgory_list .list_wrap navigator image {
+  display: block;
+  width: 302rpx;
+  height: 302rpx;
+  margin: 0 auto;
+}
+.newcatgory .newcatgory_list .list_wrap navigator view {
+  margin-bottom: 5rpx;
+  text-indent: 1em;
+}
+.newcatgory .newcatgory_list .list_wrap navigator view:nth-child(2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 98%;
+}
+.newcatgory .newcatgory_list .list_wrap navigator view:nth-child(3) {
+  color: #9c3232;
+}
+.newcatgory .newcatgory_list .list_wrap .last {
+  display: block;
+  width: 302rpx;
+  height: 302rpx;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.newcatgory .newcatgory_list .list_wrap .last view {
+  height: 33rpx;
+  width: 100%;
+  line-height: 33rpx;
+  color: #333;
+  font-size: 33rpx;
+  text-align: center;
+}
+.newcatgory .newcatgory_list .list_wrap navigator:nth-child(2n) {
+  margin-left: 10rpx;
+}

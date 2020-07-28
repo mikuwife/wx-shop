@@ -1,1 +1,116 @@
-<!--index.wxml-->
+<!-- index.wxml -->
+<view class="shop_index">
+  <!-- 搜索框 -->
+  <SearchInput></SearchInput>
+  <!-- 轮播图 -->
+  <view class="index_swiper">
+    <swiper autoplay indicator-dots circular>
+      <swiper-item wx:for="{{swiperList}}" wx:key="id">
+        <navigator>
+          <image mode="widthFix" src="{{item.image_url}}"></image>
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 导航 -->
+  <view class="index_cate">
+    <navigator wx:for="{{catesList}}" wx:key="sort_order">
+      <image mode="widthFix" src="{{item.icon_url}}"></image>
+      <text>{{item.name}}</text>
+    </navigator>
+  </view>
+  <!-- 品牌制造商直供 -->
+  <view class="index_brand">
+    <!-- 标题 -->
+    <view class="brand_title">品牌制造商直供</view>
+    <!-- 品牌内容 -->
+    <view class="brand_content">
+      <navigator wx:for="{{brandList}}" wx:for-item="item1" wx:for-index="index1" wx:key="new_sort_order">
+        <view class="brand_warp">
+          <view class="brand_name">{{item1.name}}</view>
+          <view class="brand_price">{{item1.floor_price}}元起</view>
+        </view>
+        <image mode="widthFix" src="{{item1.new_pic_url}}"></image>
+      </navigator>
+    </view>
+  </view>
+  <!-- 新品首发 -->
+  <view class="newgoods">
+    <navigator class="newgoods_top">
+      <view class="top">
+        <view>新品首发</view>
+        <view>查看全部</view>
+      </view>
+    </navigator>
+    <!-- 列表商品 -->
+    <view class="newgoods_list">
+      <scroll-view scroll-x="true" class="scroll-view">
+        <navigator wx:for="{{newGoods}}" wx:for-item="item2" wx:for-index="index2" wx:key="id">
+          <image src="{{item2.list_pic_url}}"></image>
+          <view>{{item2.name}}</view>
+          <view>{{item2.goods_brief}}</view>
+          <view>￥{{item2.retail_price}}</view>
+        </navigator>
+      </scroll-view>
+    </view>
+  </view>
+  <!-- 人气推荐 -->
+  <view class="newgoods hotgoods">
+    <navigator class="newgoods_top">
+      <view class="top">
+        <view>人气推荐*好物精选</view>
+        <view>查看全部</view>
+      </view>
+    </navigator>
+    <!-- 列表商品 -->
+    <view class="newgoods_list">
+      <scroll-view scroll-x="true" class="scroll-view">
+        <navigator wx:for="{{hotGoods}}" wx:for-item="item3" wx:for-index="index3" wx:key="id">
+          <image src="{{item3.list_pic_url}}"></image>
+          <view>{{item3.name}}</view>
+          <view>{{item3.goods_brief}}</view>
+          <view>￥{{item3.retail_price}}</view>
+        </navigator>
+      </scroll-view>
+    </view>
+  </view>
+  <!-- 专题精选 -->
+  <view class="topic">
+    <view class="topic_top">专题精选</view>
+    <view class="topic_list">
+      <scroll-view scroll-x="true" class="scroll-view">
+        <navigator wx:for="{{topicList}}" wx:for-item="item4" wx:for-index="index4" wx:key="id">
+          <image src="{{item4.item_pic_url}}"></image>
+          <view class="btom">
+            <view class="btom_left">
+              <view>{{item4.title}}</view>
+              <view>{{item4.subtitle}}</view>
+            </view>
+            <view class="btom_right">
+              <view>{{item4.price_info}}元起</view>
+            </view>
+          </view>
+        </navigator>
+      </scroll-view>
+    </view>
+  </view>
+
+  <!-- 好物 -->
+  <view class="newcatgory">
+    <view class="newcatgory_list" wx:for="{{newCategoryList}}" wx:for-item="item5" wx:for-index="index5" wx:key="id">
+      <view class="head">{{item5.name}}好物</view>
+      <view class="list_wrap">
+        <navigator wx:for="{{item5.goodsList}}" wx:for-item="item6" wx:key="id">
+          <image mode="widthFix" src="{{item6.list_pic_url}}"></image>
+          <view>{{item6.name}}</view>
+          <view>￥{{item6.retail_price}}</view>
+        </navigator>
+        <navigator>
+          <view class="last">
+            <view>{{item5.name}}好物</view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>
